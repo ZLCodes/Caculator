@@ -19,7 +19,7 @@ public class Calculator extends JFrame implements ActionListener
         this.jtf=new JTextField();
         jtf.setEditable(false);
         pack();
-        this.setSize(400,400);
+        this.setSize(400,300);
         this.getContentPane().setBackground(Color.white);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -32,8 +32,8 @@ public class Calculator extends JFrame implements ActionListener
             jb.addActionListener(this);
             jp.add(jb);
         }
-        this.getContentPane().setLayout(new GridLayout(2,1));
-        this.getContentPane().add(jtf);
+//        this.getContentPane().setLayout(new GridLayout(2,1));
+        this.getContentPane().add(jtf,BorderLayout.NORTH);
         this.getContentPane().add(jp);
         this.setVisible(true);
     }
